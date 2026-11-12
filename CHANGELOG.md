@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1 — 2026-11-12
+
+- Changed the Chinese display name to “VPN 智能助手” for clearer discovery.
+- Added Chinese npm keywords and bilingual repository copy.
+- Kept the stable technical package and plugin identifiers unchanged.
+
 ## 0.2.0 — 2026-11-12
 
 - Added an explainable VPN selection engine, provider catalog, official-channel

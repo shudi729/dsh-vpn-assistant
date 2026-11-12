@@ -2,11 +2,11 @@
   "format": 1,
   "title": {
     "en": "DSH VPN Assistant",
-    "zh": "DSH VPN 助手"
+    "zh": "DSH VPN 智能助手"
   },
   "description": {
     "en": "Publisher-maintained index for DSH VPN Assistant.",
-    "zh": "VPN Assistant 发布者维护的 DSH 插件索引。"
+    "zh": "VPN 智能助手发布者维护的 DSH 插件索引。"
   },
   "metadata": {
     "categories": {
@@ -37,7 +37,7 @@
       "name": "dsh-vpn-assistant",
       "title": {
         "en": "VPN Assistant",
-        "zh": "VPN 助手"
+        "zh": "VPN 智能助手"
       },
       "description": {
         "en": "Explainable VPN selection, official-channel guidance, installation help, and opt-in read-only diagnostics.",
@@ -58,8 +58,8 @@
       },
       "versions": [
         {
-          "version": "0.2.0",
-          "publishTimestamp": 1794467119,
+          "version": "0.2.1",
+          "publishTimestamp": 1794469106,
           "source": {
             "type": "npm"
           },

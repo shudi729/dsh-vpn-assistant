@@ -1,4 +1,4 @@
-# VPN Assistant — 智能选型规则文档（RECOMMENDATION_RULES）
+# VPN 智能助手 — 智能选型规则文档（RECOMMENDATION_RULES）
 
 > 版本：rule-v1（2026-11-12）
 > 实现文件：`src/host/selector.js`；测试：`test/unit/selector.test.js`

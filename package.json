@@ -1,7 +1,7 @@
 {
   "name": "dsh-vpn-assistant",
-  "version": "0.2.0",
-  "description": "VPN Assistant：专业选型、官方渠道、安装指导与授权只读本地诊断。",
+  "version": "0.2.1",
+  "description": "VPN 智能助手：可解释选型、官方渠道、安装指导与授权只读本地诊断。",
   "type": "module",
   "main": "./index.js",
   "icon": "./icon.svg",
@@ -10,7 +10,10 @@
     "dsh",
     "dsh-plugin",
     "dsh-bundle",
-    "vpn-assistant"
+    "vpn-assistant",
+    "VPN智能助手",
+    "VPN选型",
+    "网络诊断"
   ],
   "license": "MIT",
   "author": "shudi729",

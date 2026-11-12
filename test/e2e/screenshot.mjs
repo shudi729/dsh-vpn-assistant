@@ -29,7 +29,7 @@ await page.addInitScript(() => {
 });
 await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
 await delay(2500);
-await page.locator('button[aria-label="VPN Assistant"], button[aria-label="VPN 助手"]').first().click({ timeout: 10000 });
+await page.locator('button[aria-label="VPN Assistant"], button[aria-label="VPN 智能助手"], button[aria-label="VPN 助手"]').first().click({ timeout: 10000 });
 await page.waitForSelector('.vp-shell', { timeout: 15000 });
 await delay(1200);
 await page.screenshot({ path: PROJECT_ROOT + '/docs/ui-overview.png' });

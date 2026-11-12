@@ -30,7 +30,7 @@ window.__ModuleLoader__.load({
     ];
 
     const DICT_ZH = {
-      panel: 'VPN 助手',
+      panel: 'VPN 智能助手',
       navOverview: '概览', navMarket: '服务市场', navDownloads: '下载中心',
       navWizard: '安装向导', navHelp: '帮助中心', navSelector: '智能选型',
       selTitle: 'AI 智能选型', selSub: '回答几个问题，规则引擎基于已核实数据计算匹配度与资料可信度。评分由本地规则生成，不使用 LLM，不会编造价格或安全结论。',
@@ -1514,7 +1514,7 @@ window.__ModuleLoader__.load({
     function selectorContextQuestion(criteria, report) {
       const needs = '需求：设备=' + criteria.device + '，用途=' + criteria.purpose + '，预算=' + criteria.budget
         + '，设备数=' + criteria.deviceCount + (criteria.preferences.length ? '，偏好=' + criteria.preferences.join('+') : '') + '。';
-      let line = '我在 VPN 助手做了智能选型。' + needs;
+      let line = '我在 VPN 智能助手做了智能选型。' + needs;
       if (report) {
         if (report.results.length) {
           line += '规则引擎推荐：' + report.results.map((r) => r.name + '（' + r.score + ' 分，资料可信度 ' + r.credibility.value + '%）').join('、') + '。';

@@ -1,4 +1,6 @@
-# DSH VPN Assistant
+# VPN 智能助手 · DSH VPN Assistant
+
+**VPN 智能助手**（技术包名 `dsh-vpn-assistant`）是面向 DeepSeek Harness 的 VPN 选型、官方下载、安装指导与授权只读网络诊断插件。
 
 `dsh-vpn-assistant` is a DeepSeek Harness bundle for choosing a VPN service,
 checking packaged provider facts, finding official download channels, following
@@ -9,7 +11,7 @@ instead of an unexplained ranking. Its rule engine exposes hard exclusions,
 five scored dimensions, deductions, source dates, and a separate data-confidence
 score. It never installs or connects a VPN.
 
-![VPN Assistant overview](https://raw.githubusercontent.com/shudi729/dsh-vpn-assistant/v0.2.0/assets/overview.png)
+![VPN 智能助手 overview](https://raw.githubusercontent.com/shudi729/dsh-vpn-assistant/v0.2.1/assets/overview.png)
 
 ## Features
 
@@ -47,7 +49,7 @@ dsh --profile web
 ```
 
 The dump should contain a `dsh-vpn-assistant` layer and a `vpn-assistant`
-plugin row. Restart the profile if it was already running. Open **VPN Assistant**
+plugin row. Restart the profile if it was already running. Open **VPN 智能助手**
 from the sidebar and start with **Smart selection** or **Service market**.
 
 For DSH Desktop, use its Plugins UI when this package is present in a configured

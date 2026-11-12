@@ -64,7 +64,7 @@ async function clickPlugin(page, locator) {
 async function openPanel(page) {
   for (let i = 0; i < 12; i++) {
     await dismissHostDialogs(page);
-    const btn = page.locator('button[aria-label="VPN Assistant"], button[aria-label="VPN 助手"]').first();
+    const btn = page.locator('button[aria-label="VPN Assistant"], button[aria-label="VPN 智能助手"], button[aria-label="VPN 助手"]').first();
     if (await btn.isVisible().catch(() => false)) {
       try { await btn.click({ timeout: 4000 }); }
       catch { await dismissHostDialogs(page); continue; }
@@ -249,7 +249,7 @@ try {
 
   // E8: reload restores wizard progress (real click after reload too)
   await page.reload({ waitUntil: 'domcontentloaded' });
-  await page.waitForSelector('button[aria-label="VPN Assistant"], button[aria-label="VPN 助手"], .vp-shell', { timeout: 60000 });
+  await page.waitForSelector('button[aria-label="VPN Assistant"], button[aria-label="VPN 智能助手"], button[aria-label="VPN 助手"], .vp-shell', { timeout: 60000 });
   await openPanel(page);
   await page.waitForSelector('.vp-shell', { timeout: 30000 });
   await clickPlugin(page, page.locator('.vp-nav-item', { hasText: '安装向导' }).first());

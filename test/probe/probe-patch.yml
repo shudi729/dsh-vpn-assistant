@@ -1,0 +1,5 @@
+﻿# Probe overlay: explicit host + free port (3080 is occupied by another DSH).
+- id: webserver
+  config:
+    host: 127.0.0.1
+    port: 3099

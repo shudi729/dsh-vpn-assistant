@@ -1,0 +1,71 @@
+{
+  "name": "dsh-vpn-assistant",
+  "version": "0.2.0",
+  "description": "VPN Assistant：专业选型、官方渠道、安装指导与授权只读本地诊断。",
+  "type": "module",
+  "main": "./index.js",
+  "icon": "./icon.svg",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "vpn-assistant"
+  ],
+  "license": "MIT",
+  "author": "shudi729",
+  "homepage": "https://github.com/shudi729/dsh-vpn-assistant#readme",
+  "bugs": {
+    "url": "https://github.com/shudi729/dsh-vpn-assistant/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shudi729/dsh-vpn-assistant.git"
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": "0.2.1-rc.5"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "data/**",
+    "src/**",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node --test test/unit/*.test.js",
+    "test:probe": "node test/probe/boot-probe.mjs",
+    "test:e2e": "node test/e2e/ui.e2e.mjs",
+    "test:all": "node --test test/unit/*.test.js && node test/e2e/ui.e2e.mjs",
+    "test:install": "node test/install/install-test.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.0"
+  }
+}

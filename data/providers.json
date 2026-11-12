@@ -1,0 +1,224 @@
+[
+  {
+    "provider_id": "ivpn",
+    "name": "IVPN",
+    "official_website": "https://www.ivpn.net",
+    "official_domains": ["ivpn.net"],
+    "operator": "IVPN Limited（直布罗陀）",
+    "introduction": "注重隐私的开源 VPN 服务，提供匿名注册账户、AntiTracker 反追踪与透明度报告；无免费版。",
+    "supported_platforms": ["windows", "macos", "android", "ios", "linux"],
+    "supported_regions": null,
+    "privacy_policy_url": null,
+    "security_information": null,
+    "pricing_plans": [],
+    "price_tier": null,
+    "categories": ["privacy"],
+    "download_page_url": "https://www.ivpn.net/en/apps/",
+    "sources": [
+      { "topic": "operator", "url": "https://www.ivpn.net/en/apps/", "verified_at": "2026-11-11" },
+      { "topic": "platforms", "url": "https://www.ivpn.net/en/apps/", "verified_at": "2026-11-11" }
+    ],
+    "verified_at": "2026-11-11",
+    "verification_status": "partial",
+    "unverified_fields": ["pricing_plans", "price_tier", "privacy_policy_url", "security_information", "supported_regions"],
+    "notes": "官方定价页在抓取时未渲染价格数据，套餐与价格暂记「待核实」。官网对俄罗斯地区连通性有明确风险提示。"
+  },
+  {
+    "provider_id": "mullvad",
+    "name": "Mullvad VPN",
+    "official_website": "https://mullvad.net",
+    "official_domains": ["mullvad.net"],
+    "operator": "Mullvad VPN AB（瑞典哥德堡）",
+    "introduction": "固定月费、匿名账号（不收集邮箱）的开源 VPN 服务；无促销、无免费版，支持现金与加密货币支付。",
+    "supported_platforms": ["windows", "macos", "android", "ios", "linux"],
+    "supported_regions": null,
+    "privacy_policy_url": "https://mullvad.net/help/privacy-policy",
+    "security_information": {
+      "audits": [
+        { "name": "基础设施安全评估", "auditor": "Leviathan", "year": 2026, "url": "https://mullvad.net/download" },
+        { "name": "应用安全审计", "auditor": "X41 D-Sec", "year": 2024, "url": "https://mullvad.net/download" }
+      ],
+      "notes": "审计信息来源于官方下载页公布的安全评估记录（2026-02 与 2024-11）。"
+    },
+    "pricing_plans": [
+      { "plan_id": "flat", "name": "标准账号", "price": 5, "currency": "EUR", "period": "month", "device_limit": 5,
+        "highlights": ["固定 5 欧元/月（含 VAT），1 个月与多年价格一致", "无免费版；14 天退款（现金支付除外）"],
+        "source_url": "https://mullvad.net/pricing" }
+    ],
+    "price_tier": "paid",
+    "categories": ["privacy"],
+    "download_page_url": "https://mullvad.net/download",
+    "sources": [
+      { "topic": "operator", "url": "https://mullvad.net", "verified_at": "2026-11-11" },
+      { "topic": "pricing", "url": "https://mullvad.net/pricing", "verified_at": "2026-11-11" },
+      { "topic": "platforms", "url": "https://mullvad.net/download", "verified_at": "2026-11-11" },
+      { "topic": "audits", "url": "https://mullvad.net/download", "verified_at": "2026-11-11" },
+      { "topic": "privacy-policy", "url": "https://mullvad.net/help/privacy-policy", "verified_at": "2026-11-11" }
+    ],
+    "verified_at": "2026-11-11",
+    "verification_status": "partial",
+    "unverified_fields": ["supported_regions"],
+    "notes": "Windows 客户端 2026.5、要求 Windows 10+（64 位）见官方下载页。"
+  },
+  {
+    "provider_id": "nordvpn",
+    "name": "NordVPN",
+    "official_website": "https://nordvpn.com",
+    "official_domains": ["nordvpn.com"],
+    "operator": null,
+    "introduction": "大型商业 VPN 服务商，自研 NordLynx（基于 WireGuard）等协议，提供多档套餐；官网对自动化抓取有访问限制。",
+    "supported_platforms": null,
+    "supported_regions": null,
+    "privacy_policy_url": null,
+    "security_information": {
+      "audits": [
+        { "name": "第六次无日志政策独立鉴证（ISAE 3000，2025 年末执行）", "auditor": "Deloitte Lithuania", "year": 2025,
+          "url": "https://nordvpn.com/zh/blog/nordvpn-liucitongguo-wurizhi-shenji/" }
+      ],
+      "notes": "官网直抓被拒绝（HTTP 403），以上审计信息经官方博客页搜索摘要核实。"
+    },
+    "pricing_plans": [
+      { "plan_id": "basic", "name": "Basic", "price": 3.49, "currency": "USD", "period": "month", "device_limit": 10,
+        "highlights": ["首 27 个月预付价 $3.49/月", "按月付费 $14.99/月", "续费价更高（以官网结算页为准）"],
+        "source_url": "https://nordvpn.com/zh/blog/pianyi-de-vpn/" },
+      { "plan_id": "complete", "name": "Complete", "price": 4.49, "currency": "USD", "period": "month", "device_limit": 10,
+        "highlights": ["首 27 个月预付价 $4.49/月", "按月付费 $19.99/月", "在 Basic 基础上增加附加功能"],
+        "source_url": "https://nordvpn.com/zh/blog/pianyi-de-vpn/" }
+    ],
+    "price_tier": "paid",
+    "categories": ["general"],
+    "download_page_url": null,
+    "sources": [
+      { "topic": "pricing", "url": "https://nordvpn.com/zh/blog/pianyi-de-vpn/", "verified_at": "2026-11-11" },
+      { "topic": "pricing-2", "url": "https://nordvpn.com/blog/how-much-does-nordvpn-cost/", "verified_at": "2026-11-11" },
+      { "topic": "audits", "url": "https://nordvpn.com/zh/blog/nordvpn-liucitongguo-wurizhi-shenji/", "verified_at": "2026-11-11" }
+    ],
+    "verified_at": "2026-11-11",
+    "verification_status": "partial",
+    "unverified_fields": ["operator", "supported_platforms", "supported_regions", "privacy_policy_url", "download_page_url"],
+    "notes": "官网主站/下载页对自动抓取返回 403，运营主体、平台支持、下载渠道、隐私政策 URL 待下一轮人工核实。"
+  },
+  {
+    "provider_id": "proton-vpn",
+    "name": "Proton VPN",
+    "official_website": "https://protonvpn.com",
+    "official_domains": ["protonvpn.com", "proton.me"],
+    "operator": "Proton AG（瑞士日内瓦）",
+    "introduction": "瑞士 Proton AG 旗下的开源 VPN 服务，提供免费版与付费版；以无日志政策与年度外部审计作为公开承诺。",
+    "supported_platforms": ["windows", "macos", "android", "ios", "linux"],
+    "supported_regions": ["官方服务器网络覆盖 140+ 国家/地区（官网宣称，2026-11 核实）"],
+    "privacy_policy_url": "https://protonvpn.com/privacy-policy",
+    "security_information": {
+      "audits": [
+        { "name": "无日志政策年度外部审计（第 5 次）", "auditor": "Securitum", "year": null, "url": "https://protonvpn.com/blog/no-logs-audit/" },
+        { "name": "无日志政策安全报告", "auditor": "Securitum", "year": 2023, "url": "https://www.securitum.com/public-reports/securitum-protonvpn-nologs-2023.pdf" }
+      ],
+      "notes": "官方博客每年公布 Securitum 无日志审计；Securitum 为独立安全公司，审计报告 PDF 在其官网公开。"
+    },
+    "pricing_plans": [
+      { "plan_id": "free", "name": "Proton Free", "price": 0, "currency": "USD", "period": "month", "device_limit": 1,
+        "highlights": ["免费，无需信用卡", "中等速度，10 国随机服务器", "无数据量限制"],
+        "source_url": "https://protonvpn.com/pricing" },
+      { "plan_id": "plus", "name": "VPN Plus", "price": 2.99, "currency": "USD", "period": "month", "device_limit": 10,
+        "highlights": ["首年促销价 $2.99/月（原价 $9.99/月）", "续费价约 $6.99/月（$83.88/12 个月）", "10 台设备"],
+        "source_url": "https://protonvpn.com/pricing" },
+      { "plan_id": "unlimited", "name": "Proton Unlimited", "price": 6.49, "currency": "USD", "period": "month", "device_limit": 10,
+        "highlights": ["首年促销价 $6.49/月（原价 $12.99/月）", "含 Proton Mail/Pass/Drive 等整套服务", "10 台设备"],
+        "source_url": "https://protonvpn.com/pricing" }
+    ],
+    "price_tier": "freemium",
+    "categories": ["general", "privacy"],
+    "download_page_url": "https://protonvpn.com/download",
+    "sources": [
+      { "topic": "operator", "url": "https://protonvpn.com", "verified_at": "2026-11-11" },
+      { "topic": "pricing", "url": "https://protonvpn.com/pricing", "verified_at": "2026-11-11" },
+      { "topic": "platforms", "url": "https://protonvpn.com/download", "verified_at": "2026-11-11" },
+      { "topic": "audits", "url": "https://protonvpn.com/blog/no-logs-audit/", "verified_at": "2026-11-11" },
+      { "topic": "privacy-policy", "url": "https://protonvpn.com/privacy-policy", "verified_at": "2026-11-11" }
+    ],
+    "verified_at": "2026-11-11",
+    "verification_status": "verified",
+    "unverified_fields": [],
+    "notes": "促销价随官网活动变化，价格以官网结算页实时显示为准。"
+  },
+  {
+    "provider_id": "surfshark",
+    "name": "Surfshark",
+    "official_website": "https://surfshark.com",
+    "official_domains": ["surfshark.com"],
+    "operator": "Surfshark B.V.（荷兰阿姆斯特丹，KvK 81967985）",
+    "introduction": "荷兰商业 VPN 服务商，主打无限设备连接与安全套件（Starter/One/One+）。",
+    "supported_platforms": ["windows", "macos", "android", "ios", "linux"],
+    "supported_regions": ["官方服务器覆盖 100+ 国家（官网定价页宣称，2026-11 核实）"],
+    "privacy_policy_url": null,
+    "security_information": {
+      "audits": [
+        { "name": "无日志政策独立验证", "auditor": "Deloitte", "year": 2023, "url": "https://surfshark.com/download" },
+        { "name": "无日志政策独立验证", "auditor": "Deloitte", "year": 2025, "url": "https://surfshark.com/download" }
+      ],
+      "notes": "官方下载页声明其无日志政策由 Deloitte 于 2023 与 2025 年独立验证。"
+    },
+    "pricing_plans": [
+      { "plan_id": "starter", "name": "Starter", "price": 19.48, "currency": "HKD", "period": "month", "device_limit": null,
+        "highlights": ["24 个月方案均价 HK$19.48/月（HK$525.96 预付）", "无限设备连接", "30 天退款保证", "页面币种随地区变化"],
+        "source_url": "https://surfshark.com/pricing" },
+      { "plan_id": "one", "name": "One", "price": 19.48, "currency": "HKD", "period": "month", "device_limit": null,
+        "highlights": ["Starter 之上增加杀毒与泄露提醒", "24 个月方案均价 HK$19.48/月"],
+        "source_url": "https://surfshark.com/pricing" },
+      { "plan_id": "one-plus", "name": "One+", "price": 31.18, "currency": "HKD", "period": "month", "device_limit": null,
+        "highlights": ["再增加 Incogni 数据删除服务", "24 个月方案均价 HK$31.18/月"],
+        "source_url": "https://surfshark.com/pricing" }
+    ],
+    "price_tier": "paid",
+    "categories": ["general"],
+    "download_page_url": "https://surfshark.com/download",
+    "sources": [
+      { "topic": "operator", "url": "https://surfshark.com", "verified_at": "2026-11-11" },
+      { "topic": "pricing", "url": "https://surfshark.com/pricing", "verified_at": "2026-11-11" },
+      { "topic": "platforms", "url": "https://surfshark.com", "verified_at": "2026-11-11" },
+      { "topic": "audits", "url": "https://surfshark.com/download", "verified_at": "2026-11-11" },
+      { "topic": "download-android", "url": "https://surfshark.com/download/android", "verified_at": "2026-11-11" },
+      { "topic": "download-ios", "url": "https://surfshark.com/download/ios", "verified_at": "2026-11-11" }
+    ],
+    "verified_at": "2026-11-11",
+    "verification_status": "partial",
+    "unverified_fields": ["privacy_policy_url"],
+    "notes": "官网页脚有 Privacy Policy 链接，但本轮未确认最终 URL，暂记「待核实」。"
+  },
+  {
+    "provider_id": "windscribe",
+    "name": "Windscribe",
+    "official_website": "https://windscribe.com",
+    "official_domains": ["windscribe.com"],
+    "operator": "Windscribe Limited（加拿大）",
+    "introduction": "加拿大 VPN 服务商，提供 10GB/月免费额度与 Pro 套餐；客户端开源，基础设施为 RAM-only 架构。",
+    "supported_platforms": ["windows", "macos", "android", "ios", "linux"],
+    "supported_regions": ["官方服务器覆盖 69+ 国家、135+ 城市（官网宣称，2026-11 核实）"],
+    "privacy_policy_url": null,
+    "security_information": {
+      "audits": [],
+      "notes": "截至核实日（2026-11-11），官网未公布独立第三方安全审计报告；官方页面以开源客户端与 RAM-only 架构作为公开声明，本插件不据此推断安全结论。"
+    },
+    "pricing_plans": [
+      { "plan_id": "free", "name": "Free", "price": 0, "currency": "USD", "period": "month", "device_limit": null,
+        "highlights": ["注册并确认邮箱后 10GB/月", "免费版设备数限制以官网说明为准（待核实）"],
+        "source_url": "https://windscribe.com" },
+      { "plan_id": "pro", "name": "Pro", "price": 29, "currency": "USD", "period": "year", "device_limit": null,
+        "highlights": ["促销价 $29/年（原价 $69/年，促销至 2026-11-30）", "官方宣称续费同为 $29/年", "宣称无限设备连接"],
+        "source_url": "https://windscribe.com" }
+    ],
+    "price_tier": "freemium",
+    "categories": ["general"],
+    "download_page_url": "https://windscribe.com/download",
+    "sources": [
+      { "topic": "operator", "url": "https://windscribe.com", "verified_at": "2026-11-11" },
+      { "topic": "pricing", "url": "https://windscribe.com", "verified_at": "2026-11-11" },
+      { "topic": "platforms", "url": "https://windscribe.com/download", "verified_at": "2026-11-11" },
+      { "topic": "windows-requirements", "url": "https://windscribe.com/download", "verified_at": "2026-11-11" }
+    ],
+    "verified_at": "2026-11-11",
+    "verification_status": "partial",
+    "unverified_fields": ["privacy_policy_url", "security_information"],
+    "notes": "Android 另有官方 F-Droid 渠道（官网下载页列示）。"
+  }
+]

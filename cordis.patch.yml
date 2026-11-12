@@ -1,0 +1,5 @@
+# VPN Assistant bundle patch: inserts the Host row whose enabled Loader entry
+# contributes the package's dsh.client bundle to the web boot graph.
+- insert:
+    - id: vpn-assistant
+      name: 'dsh-vpn-assistant'

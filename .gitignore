@@ -1,0 +1,10 @@
+node_modules/
+.dsh-*/
+.backup*/
+*.tgz
+*.zip
+*.log
+_extract/
+docs/*-results.json
+docs/helper-device-results.json
+docs/ui-*.png

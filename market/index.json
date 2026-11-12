@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "title": {
+    "en": "DSH VPN Assistant",
+    "zh": "DSH VPN 助手"
+  },
+  "description": {
+    "en": "Publisher-maintained index for DSH VPN Assistant.",
+    "zh": "VPN Assistant 发布者维护的 DSH 插件索引。"
+  },
+  "metadata": {
+    "categories": {
+      "networking": {
+        "title": {
+          "en": "Networking",
+          "zh": "网络工具"
+        }
+      }
+    },
+    "labels": {
+      "vpn": {
+        "title": {
+          "en": "VPN",
+          "zh": "VPN"
+        }
+      },
+      "diagnostics": {
+        "title": {
+          "en": "Diagnostics",
+          "zh": "诊断"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-vpn-assistant",
+      "title": {
+        "en": "VPN Assistant",
+        "zh": "VPN 助手"
+      },
+      "description": {
+        "en": "Explainable VPN selection, official-channel guidance, installation help, and opt-in read-only diagnostics.",
+        "zh": "可解释的 VPN 选型、官方渠道指引、安装帮助和用户授权的只读诊断。"
+      },
+      "icon": "../icon.svg",
+      "author": "shudi729",
+      "homepage": "https://github.com/shudi729/dsh-vpn-assistant#readme",
+      "repository": {
+        "url": "https://github.com/shudi729/dsh-vpn-assistant"
+      },
+      "metadata": {
+        "category": "networking",
+        "labels": [
+          "vpn",
+          "diagnostics"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.2.0",
+          "publishTimestamp": 1794467119,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": "0.2.1-rc.5"
+          }
+        }
+      ]
+    }
+  ]
+}

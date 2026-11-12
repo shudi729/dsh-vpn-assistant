@@ -1,0 +1,559 @@
+[
+  {
+    "tutorial_id": "generic-windows",
+    "provider_id": null,
+    "platform": "windows",
+    "title": "在 Windows 上安装 VPN 客户端（通用流程）",
+    "authorship": "assistant-generalized",
+    "steps": [
+      {
+        "step_id": "s1",
+        "name": "获取官方下载入口",
+        "instructions": [
+          "在下载中心选择你的服务商与 Windows 平台",
+          "点击「官方下载」并核对浏览器地址栏域名属于服务商官方域名",
+          "移动端用户请使用官方应用商店"
+        ],
+        "tips": [
+          "不要通过搜索引擎广告或第三方下载站获取安装包"
+        ],
+        "warnings": [
+          "本插件不托管安装包；任何非官方域名的安装包都不应安装"
+        ],
+        "illustration": "windows-install"
+      },
+      {
+        "step_id": "s2",
+        "name": "下载安装包",
+        "instructions": [
+          "在官方下载页点击对应 Windows 版本的下载按钮",
+          "等待下载完成；部分官方页面提供 GPG/签名校验文件，可一并下载"
+        ],
+        "tips": [
+          "注意浏览器提示的文件名与大小是否合理"
+        ],
+        "warnings": [],
+        "illustration": "windows-install"
+      },
+      {
+        "step_id": "s3",
+        "name": "运行安装程序",
+        "instructions": [
+          "双击下载的安装包（.exe/.msi）",
+          "如出现用户账户控制（UAC）提示，确认发行方为服务商官方名称后选择「是」",
+          "按安装向导完成安装"
+        ],
+        "tips": [
+          "若发行方名称与官方不符，停止安装并重新从官方页下载"
+        ],
+        "warnings": [],
+        "illustration": "windows-install"
+      },
+      {
+        "step_id": "s4",
+        "name": "注册与登录",
+        "instructions": [
+          "启动客户端",
+          "使用你在服务商官网注册的账号登录（或按服务商指引生成匿名账号）",
+          "本插件不参与账号注册，也不收集任何账号信息"
+        ],
+        "tips": [],
+        "warnings": [
+          "请勿在任何对话（包括本插件的 AI 询问）中提交密码或订阅密钥"
+        ],
+        "illustration": "windows-install"
+      },
+      {
+        "step_id": "s5",
+        "name": "确认安装完成",
+        "instructions": [
+          "客户端主界面正常显示且已登录",
+          "选择一个服务器位置并尝试连接",
+          "连接成功后可通过 IP 查询网站确认出口 IP 已改变"
+        ],
+        "tips": [],
+        "warnings": [
+          "连接状态以官方客户端为准；本插件不读取网络状态"
+        ],
+        "illustration": "windows-install"
+      },
+      {
+        "step_id": "s6",
+        "name": "后续配置",
+        "instructions": [
+          "按需在官方客户端设置中开启 Kill Switch / 自动连接等选项",
+          "在服务商官网了解套餐设备数限制"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "windows-install"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "安装程序无法启动",
+        "matches": [
+          "无法启动",
+          "installer",
+          "安装程序",
+          "双击没反应"
+        ],
+        "advice": [
+          "确认安装包来自官方下载页",
+          "右键以管理员身份运行",
+          "检查杀毒软件是否拦截（确认发行方后放行）"
+        ],
+        "escalation": "使用服务商官方支持渠道"
+      },
+      {
+        "symptom": "安装过程中报错退出",
+        "matches": [
+          "安装失败",
+          "报错",
+          "error",
+          "回滚"
+        ],
+        "advice": [
+          "确认系统版本满足官方要求（如 Windows 10+ 64 位）",
+          "临时关闭杀毒软件后重试",
+          "从官方页重新下载完整安装包"
+        ],
+        "escalation": "使用服务商官方支持渠道"
+      },
+      {
+        "symptom": "安装成功但无法连接",
+        "matches": [
+          "无法连接",
+          "连接失败",
+          "timeout",
+          "超时"
+        ],
+        "advice": [
+          "检查系统时间是否准确",
+          "尝试切换其他服务器位置",
+          "检查防火墙是否拦截客户端",
+          "尝试切换官方客户端内可用协议"
+        ],
+        "escalation": "使用服务商官方支持渠道"
+      }
+    ],
+    "last_updated": "2026-11-11",
+    "source": "流程为本插件基于各服务商官方下载页与官方客户端公开行为归纳的通用指导；各服务商细节以官方帮助中心为准（见 providers.json）",
+    "verified_at": "2026-11-11"
+  },
+  {
+    "tutorial_id": "generic-macos",
+    "provider_id": null,
+    "platform": "macos",
+    "title": "在 macOS 上安装 VPN 客户端（通用流程）",
+    "authorship": "assistant-generalized",
+    "steps": [
+      {
+        "step_id": "s1",
+        "name": "获取官方下载入口",
+        "instructions": [
+          "在下载中心选择你的服务商与 macOS 平台",
+          "从官方下载页获取安装包"
+        ],
+        "tips": [],
+        "warnings": [
+          "macOS 可能限制非 App Store 应用；请按官方指引允许"
+        ],
+        "illustration": "macos-install"
+      },
+      {
+        "step_id": "s2",
+        "name": "下载并安装",
+        "instructions": [
+          "下载 .dmg 或 .pkg 安装文件",
+          "dmg：打开并将应用拖入「应用程序」；pkg：按向导安装",
+          "首次启动如提示来源验证，按系统指引确认"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "macos-install"
+      },
+      {
+        "step_id": "s3",
+        "name": "授权系统扩展/VPN 配置",
+        "instructions": [
+          "首次连接时 macOS 会请求允许添加 VPN 配置或系统扩展",
+          "按提示在系统设置中允许"
+        ],
+        "tips": [],
+        "warnings": [
+          "仅应为可信的官方客户端授权"
+        ],
+        "illustration": "macos-install"
+      },
+      {
+        "step_id": "s4",
+        "name": "注册与登录",
+        "instructions": [
+          "使用官网账号登录或按服务商指引生成账号"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "macos-install"
+      },
+      {
+        "step_id": "s5",
+        "name": "确认安装完成",
+        "instructions": [
+          "登录后选择位置并连接，通过 IP 查询确认出口 IP 变化"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "macos-install"
+      },
+      {
+        "step_id": "s6",
+        "name": "后续配置",
+        "instructions": [
+          "按需开启官方客户端内的自动连接等选项"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "macos-install"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "无法验证开发者",
+        "matches": [
+          "无法验证",
+          "gatekeeper",
+          "身份不明"
+        ],
+        "advice": [
+          "确认安装包来自官方域名",
+          "按 macOS 官方指引在系统设置中允许该应用"
+        ],
+        "escalation": "使用服务商官方支持渠道"
+      },
+      {
+        "symptom": "安装后无法连接",
+        "matches": [
+          "无法连接",
+          "连接失败",
+          "timeout"
+        ],
+        "advice": [
+          "检查系统时间",
+          "检查是否已允许 VPN 配置/系统扩展",
+          "尝试切换位置或协议"
+        ],
+        "escalation": "使用服务商官方支持渠道"
+      }
+    ],
+    "last_updated": "2026-11-11",
+    "source": "流程为本插件基于官方客户端公开行为归纳的通用指导；细节以各服务商官方帮助中心为准",
+    "verified_at": "2026-11-11"
+  },
+  {
+    "tutorial_id": "generic-android",
+    "provider_id": null,
+    "platform": "android",
+    "title": "在 Android 上安装 VPN 应用（仅官方商店渠道）",
+    "authorship": "assistant-generalized",
+    "steps": [
+      {
+        "step_id": "s1",
+        "name": "打开官方应用商店",
+        "instructions": [
+          "通过下载中心进入服务商官方下载页，再跳转 Google Play（或官方列出的 F-Droid 等官方渠道）",
+          "核对开发者名称与官方一致"
+        ],
+        "tips": [],
+        "warnings": [
+          "不要安装来自浏览器弹窗或第三方网站提供的 APK"
+        ],
+        "illustration": "android-install"
+      },
+      {
+        "step_id": "s2",
+        "name": "安装应用",
+        "instructions": [
+          "在商店页点击安装并等待完成"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "android-install"
+      },
+      {
+        "step_id": "s3",
+        "name": "授权 VPN 连接",
+        "instructions": [
+          "首次连接时系统会弹出「VPN 连接请求」，确认应用名称无误后允许"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "android-install"
+      },
+      {
+        "step_id": "s4",
+        "name": "注册与登录",
+        "instructions": [
+          "使用官网账号登录或按服务商指引生成账号"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "android-install"
+      },
+      {
+        "step_id": "s5",
+        "name": "确认安装完成",
+        "instructions": [
+          "连接成功后通知栏出现 VPN 图标；可通过 IP 查询确认出口 IP"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "android-install"
+      },
+      {
+        "step_id": "s6",
+        "name": "后续配置",
+        "instructions": [
+          "按需开启「始终开启的 VPN」或分应用代理等官方选项"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "android-install"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "商店中没有该应用",
+        "matches": [
+          "找不到",
+          "商店",
+          "不可用"
+        ],
+        "advice": [
+          "通过官方下载页提供的商店入口进入",
+          "部分地区商店可能不提供；以官方页说明为准"
+        ],
+        "escalation": "使用服务商官方支持渠道"
+      },
+      {
+        "symptom": "连接后无网络",
+        "matches": [
+          "无网络",
+          "断网",
+          "无法上网"
+        ],
+        "advice": [
+          "切换其他位置",
+          "检查是否与其他 VPN/代理应用冲突",
+          "重启应用"
+        ],
+        "escalation": "使用服务商官方支持渠道"
+      }
+    ],
+    "last_updated": "2026-11-11",
+    "source": "流程为本插件基于官方客户端公开行为归纳的通用指导；细节以各服务商官方帮助中心为准",
+    "verified_at": "2026-11-11"
+  },
+  {
+    "tutorial_id": "generic-ios",
+    "provider_id": null,
+    "platform": "ios",
+    "title": "在 iOS 上安装 VPN 应用（仅官方 App Store 渠道）",
+    "authorship": "assistant-generalized",
+    "steps": [
+      {
+        "step_id": "s1",
+        "name": "打开 App Store",
+        "instructions": [
+          "通过下载中心进入服务商官方下载页，再跳转 App Store",
+          "核对开发者名称与官方一致"
+        ],
+        "tips": [],
+        "warnings": [
+          "iOS 无法侧载，任何非 App Store 渠道的安装方式都不应使用"
+        ],
+        "illustration": "ios-install"
+      },
+      {
+        "step_id": "s2",
+        "name": "安装应用",
+        "instructions": [
+          "在 App Store 页点击获取并等待安装完成"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "ios-install"
+      },
+      {
+        "step_id": "s3",
+        "name": "授权 VPN 配置",
+        "instructions": [
+          "首次连接时系统会请求添加 VPN 配置，确认后允许"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "ios-install"
+      },
+      {
+        "step_id": "s4",
+        "name": "注册与登录",
+        "instructions": [
+          "使用官网账号登录或按服务商指引生成账号"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "ios-install"
+      },
+      {
+        "step_id": "s5",
+        "name": "确认安装完成",
+        "instructions": [
+          "连接成功后状态栏出现 VPN 标记；可通过 IP 查询确认出口 IP"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "ios-install"
+      },
+      {
+        "step_id": "s6",
+        "name": "后续配置",
+        "instructions": [
+          "按需在系统设置的 VPN 页管理配置，或在官方应用内调整选项"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": "ios-install"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "App Store 区域不提供",
+        "matches": [
+          "搜不到",
+          "区域",
+          "不可用"
+        ],
+        "advice": [
+          "以服务商官方帮助中心说明的区域可用性为准",
+          "不要通过第三方渠道安装"
+        ],
+        "escalation": "使用服务商官方支持渠道"
+      },
+      {
+        "symptom": "连接后无法上网",
+        "matches": [
+          "无网络",
+          "断网",
+          "无法上网"
+        ],
+        "advice": [
+          "切换位置",
+          "重启应用或设备",
+          "检查是否与其他 VPN 配置冲突"
+        ],
+        "escalation": "使用服务商官方支持渠道"
+      }
+    ],
+    "last_updated": "2026-11-11",
+    "source": "流程为本插件基于官方客户端公开行为归纳的通用指导；细节以各服务商官方帮助中心为准",
+    "verified_at": "2026-11-11"
+  },
+  {
+    "tutorial_id": "generic-linux",
+    "provider_id": null,
+    "platform": "linux",
+    "title": "在 Linux 上安装 VPN 客户端（通用流程）",
+    "authorship": "assistant-generalized",
+    "steps": [
+      {
+        "step_id": "s1",
+        "name": "确认官方安装渠道",
+        "instructions": [
+          "在下载中心进入服务商官方下载页，选择 Linux",
+          "多数服务商提供 .deb/.rpm 包或官方软件仓库"
+        ],
+        "tips": [],
+        "warnings": [
+          "仅使用官方仓库或官方页面提供的包"
+        ],
+        "illustration": null
+      },
+      {
+        "step_id": "s2",
+        "name": "安装软件包",
+        "instructions": [
+          "按官方页给出的命令安装（如 apt/dnf 安装 .deb/.rpm）",
+          "添加官方仓库时核对仓库地址属于官方域名"
+        ],
+        "tips": [],
+        "warnings": [
+          "不要使用来路不明的第三方仓库"
+        ],
+        "illustration": null
+      },
+      {
+        "step_id": "s3",
+        "name": "登录与连接",
+        "instructions": [
+          "启动官方客户端（GUI 或 CLI）并登录",
+          "选择位置并连接"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": null
+      },
+      {
+        "step_id": "s4",
+        "name": "确认安装完成",
+        "instructions": [
+          "通过 IP 查询确认出口 IP 变化"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": null
+      },
+      {
+        "step_id": "s5",
+        "name": "后续配置",
+        "instructions": [
+          "按需配置开机自启、Kill Switch 等官方选项"
+        ],
+        "tips": [],
+        "warnings": [],
+        "illustration": null
+      }
+    ],
+    "troubleshooting": [
+      {
+        "symptom": "依赖冲突或安装失败",
+        "matches": [
+          "依赖",
+          "dependency",
+          "安装失败"
+        ],
+        "advice": [
+          "按官方页说明的发行版与版本安装",
+          "优先使用官方软件仓库"
+        ],
+        "escalation": "使用服务商官方支持渠道"
+      },
+      {
+        "symptom": "命令行连接失败",
+        "matches": [
+          "连接失败",
+          "cli",
+          "超时"
+        ],
+        "advice": [
+          "检查系统时间与 DNS",
+          "查看官方 CLI 日志输出",
+          "尝试切换协议或位置"
+        ],
+        "escalation": "使用服务商官方支持渠道"
+      }
+    ],
+    "last_updated": "2026-11-11",
+    "source": "流程为本插件基于官方客户端公开行为归纳的通用指导；细节以各服务商官方帮助中心为准",
+    "verified_at": "2026-11-11"
+  }
+]

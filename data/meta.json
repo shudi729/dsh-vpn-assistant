@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026-11-11",
+  "verifiedOn": "2026-11-11",
+  "platforms": ["windows", "macos", "android", "ios", "linux"],
+  "platformLabels": { "windows": "Windows", "macos": "macOS", "android": "Android", "ios": "iOS", "linux": "Linux" },
+  "priceTiers": ["free", "freemium", "paid"],
+  "priceTierLabels": { "free": "免费", "freemium": "免费增值", "paid": "付费" },
+  "categories": ["general", "privacy"],
+  "categoryLabels": { "general": "通用", "privacy": "隐私优先" },
+  "notes": [
+    "本列表按名称字母序展示，不代表任何推荐排名。",
+    "所有资料标注来源与核实时间；无法核实的字段在记录的 unverified_fields 中登记并显示「待核实」。",
+    "本插件不提供 VPN 安装包，下载入口一律指向官方页面或官方应用商店。"
+  ],
+  "disclaimers": {
+    "anonymity": "任何 VPN 服务都不能承诺绝对匿名或绝对安全；实际效果取决于服务商策略、使用方式与本地法律环境。",
+    "legal": "使用 VPN 服务请遵守你所在地适用的法律法规。",
+    "scope": "本插件只提供服务信息、官方下载入口与安装指导，不会自动安装软件或修改系统网络设置。"
+  }
+}
